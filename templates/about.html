@@ -7,11 +7,14 @@
     <title>Snow Globe Collector</title>
 </head>
 <body>
-      
-    <h1>Welcome {{name}}to the official Snow Globe Collector Catalog</h1>
+       {% extends 'base.html' %} 
+       {%block content%}
+    <h1>Welcome {{name}} to the official Snow Globe Collector Catalog</h1>
     <hr />
     <p>We are the leaders of catagorizing snow globe collections from one specific snow globe collector.</p>
         
     <footer>All Rights Reserved, &copy; 2022 Snow Globe Shmoe Globe</footer>
+
+    {% endblock %}
 </body>
 </html>
