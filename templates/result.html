@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>RESULT</title>
 </head>
 <body>
+       {% extends 'base.html' %} 
+       {%block content%}
+       <li><a href="/base">Base</a></li>
 
-    <form action="add">
-Enter NUM1: <input type="text" name="num1"><br>
-Enter Num2: <input type="text" name="num2"><br>
-<input type="submit">
-    </form>
+   
 
+    {% endblock %}
 </body>
 </html>
