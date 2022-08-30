@@ -17,7 +17,16 @@ def about(request):
 def base(request):
     return render(request, 'base.html', {'base': "Farhan's base"})
 
+
+
+
 def add(request):
-    return render(request, 'result.html', {'name': "Farhan's add"})
+
+    val1 = request.POST['num1']
+    val2 = request.POST['num2']
+    res = val1+val2
+
+
+    return render(request, 'result.html', {'result': res})
 
 
